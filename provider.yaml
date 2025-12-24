@@ -1,0 +1,17 @@
+identity:
+  author: 10846295@qq.com
+  name: user_profile_provider
+  label:
+    en_US: User Profile Provider
+    zh_Hans: 用户信息提供者
+  description:
+    en_US: Provides tools to get user profile information.
+    zh_Hans: 提供获取用户信息的工具。
+  icon: icon.svg
+  tags:
+    - user
+    - profile
+    - information
+tools:
+  - get_user_profile.yaml
+

@@ -1,0 +1,22 @@
+identity:
+  name: get_user_profile
+  author: 10846295@qq.com
+  label:
+    en_US: Get User Profile
+    zh_Hans: 获取用户信息
+  description:
+    en_US: Get the current logged-in user's personal information, including user ID, nickname, language preference, timezone, etc.
+    zh_Hans: 获取当前登录用户的个人信息，包括用户ID、昵称、语言偏好、时区等信息。
+parameters: []
+provider:
+  type: http
+  url: http://43.130.39.119/user/get_profile
+  method: POST
+  headers:
+    accept: application/json
+    Content-Type: application/json
+    Authorization: "Bearer {{#context.auth_token#}}"
+  body:
+    type: json
+    json: "{}"
+
