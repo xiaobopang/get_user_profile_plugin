@@ -1,6 +1,6 @@
 version: 0.0.1
 type: plugin
-author: 10846295@qq.com
+author: xiaobopang
 name: get_user_profile_plugin
 label:
   en_US: User Profile Plugin
