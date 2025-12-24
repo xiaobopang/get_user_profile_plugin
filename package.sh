@@ -21,8 +21,8 @@ echo "临时目录: $TEMP_DIR"
 cp manifest.yaml provider.yaml main.py requirements.txt privacy.md "$TEMP_DIR/" 2>/dev/null || true
 # 将工具文件复制到根目录（根据 provider.yaml 中的配置）
 cp tools/get_user_profile.yaml "$TEMP_DIR/get_user_profile.yaml" 2>/dev/null || true
-# 将 icon 文件复制到根目录（不包含 _assets 目录）
-cp icon.svg "$TEMP_DIR/icon.svg" 2>/dev/null || true
+# 将 _assets 目录复制到临时目录（包含 icon.svg）
+cp -r _assets "$TEMP_DIR/" 2>/dev/null || true
 
 cd "$TEMP_DIR"
 
