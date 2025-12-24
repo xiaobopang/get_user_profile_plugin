@@ -7,7 +7,6 @@ identity:
   description:
     en_US: Provides tools to get user profile information.
     zh_Hans: 提供获取用户信息的工具。
-  icon: icon.svg
   tags:
     - user
     - profile
