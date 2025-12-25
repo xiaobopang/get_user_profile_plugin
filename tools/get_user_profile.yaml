@@ -7,16 +7,7 @@ identity:
   description:
     en_US: Get the current logged-in user's personal information, including user ID, nickname, language preference, timezone, etc. The token should be passed from the request context.
     zh_Hans: 获取当前登录用户的个人信息，包括用户ID、昵称、语言偏好、时区等信息。token 需要从请求上下文中传递。
-parameters:
-  - name: token
-    type: string
-    required: false
-    label:
-      en_US: Authorization Token
-      zh_Hans: 授权令牌
-    human_description:
-      en_US: The authorization token for the API request. If not provided, will try to get from request context.
-      zh_Hans: API 请求的授权令牌。如果未提供，将尝试从请求上下文中获取。
+parameters: []
 provider:
   type: python
   module: main
